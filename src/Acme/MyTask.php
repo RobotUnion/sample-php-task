@@ -12,33 +12,37 @@ use RobotUnion\Integration\RobotTask;
 
 class MyTask extends RobotTask {
 
-    public function getTestInput(){
-        $input = new \stdClass();
-        $input->param1 = "test1";
-        $input->param2 = "test2 polla";
-        return $input;
-    }
-
     /**
      * @return mixed
      */
     function mock(){
-        return [];
+        return [
+            'info' => [
+                'test' => true,
+                'random' => rand(0,20),
+                "comment" => "This is a testing response (mock)"
+            ]
+        ];
     }
 
     /**
      * @return mixed
      */
     function run() {
-        $input = $this->getTestInput();
 
         $this->getLogger()->debug("START");
 
-        $this->getLogger()->debug(['input' => $input]);
+        $this->getLogger()->debug(['input' => $this->getInput()]);
 
         $this->getLogger()->debug("END");
 
-        return ['polla' => ['caca' => 'jeje aa ok', 'random' => rand(0,20)]];
+        return [
+            'info' => [
+                'test' => true,
+                'random' => rand(0,20),
+                "comment" => "This is a testing response (run)"
+            ]
+        ];
     }
 
 }
