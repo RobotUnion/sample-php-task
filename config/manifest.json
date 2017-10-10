@@ -1,0 +1,16 @@
+{
+  "name": "Base Chrome Task",
+  "description": "This is an example of a chrome task",
+  "version": "1.2.1",
+  "code_version": 4,
+  "language": "php",
+  "interpreter": "php7.0",
+  "main": "Acme\\MyTask",
+  "robot-filter": {
+    "device": {
+      "os": "any",
+      "program": "chrome"
+    }
+  },
+  "robot-permissions": {}
+}
