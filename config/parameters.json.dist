@@ -1,5 +1,14 @@
 {
   "debug-url": "https://api.alpha.rallf.com",
   "key": "mykey",
-  "secret": "mysecret"
+  "secret": "mysecret",
+  "account":"acc-id",
+  "development":"dev-id",
+  "robot": {
+    "selenium": "http://localhost:4444/wd/hub",
+    "capabilities": {
+      "os": "any",
+      "program": "chromium"
+    }
+  }
 }
