@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobotUnion/robot-php-sdk.git",
-                "reference": "0648262c9074c12df4066a66fc364b043cef9bee"
+                "reference": "773112eac138af1dff12d827390e666f58a4dbd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobotUnion/robot-php-sdk/zipball/0648262c9074c12df4066a66fc364b043cef9bee",
-                "reference": "0648262c9074c12df4066a66fc364b043cef9bee",
+                "url": "https://api.github.com/repos/RobotUnion/robot-php-sdk/zipball/773112eac138af1dff12d827390e666f58a4dbd0",
+                "reference": "773112eac138af1dff12d827390e666f58a4dbd0",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
                 "source": "https://github.com/RobotUnion/robot-php-sdk/tree/v2",
                 "issues": "https://github.com/RobotUnion/robot-php-sdk/issues"
             },
-            "time": "2017-11-16T17:30:14+00:00"
+            "time": "2017-11-16T19:57:10+00:00"
         },
         {
             "name": "facebook/webdriver",
@@ -98,7 +98,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.3.12",
+            "version": "v3.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",

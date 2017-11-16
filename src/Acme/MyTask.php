@@ -8,6 +8,7 @@
 
 namespace Acme;
 
+use RALLF\Integration\Logger;
 use RALLF\Integration\Task;
 
 class MyTask extends Task {
@@ -30,11 +31,14 @@ class MyTask extends Task {
      */
     function run() {
 
-        $this->getLogger()->debug("START");
+        /** @var Logger $log */
+        $log = $this->getLogger();
 
-        $this->getLogger()->debug(['input' => $this->getInput()]);
+        $log->debug("START");
 
-        $this->getLogger()->debug("END");
+        $log->debug("input", $this->getInput());
+
+        $log->debug("END");
 
         return [
             'info' => [
