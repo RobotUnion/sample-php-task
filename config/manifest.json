@@ -7,7 +7,7 @@
   "interpreter": "php7.0",
   "main": "Acme\\MyTask",
   "robot-filter": {
-    "device": {
+    "driver": {
       "os": "any",
       "program": "chrome"
     }

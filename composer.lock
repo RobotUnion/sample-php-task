@@ -4,57 +4,72 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aab0c7b6ec4c2f8a9d57d09e2911c2c4",
+    "content-hash": "195a098d7d69ec6d2cf5275a56c8d237",
     "packages": [
         {
             "name": "RobotUnion/robot-php-sdk",
-            "version": "dev-driverfree",
+            "version": "v2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobotUnion/robot-php-sdk.git",
+                "reference": "0648262c9074c12df4066a66fc364b043cef9bee"
+            },
             "dist": {
-                "type": "path",
-                "url": "/home/lluis/Projects/Web/robotunion.net/robot-php-sdk",
-                "reference": "690b81acb3b58b0528c8cb5ab0ebdf63c7eadcb5",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobotUnion/robot-php-sdk/zipball/0648262c9074c12df4066a66fc364b043cef9bee",
+                "reference": "0648262c9074c12df4066a66fc364b043cef9bee",
+                "shasum": ""
             },
             "require": {
-                "ext-zip": "*"
+                "ext-zip": "*",
+                "facebook/webdriver": "^1.5"
             },
             "bin": [
                 "bin/rr",
-                "bin/rpkg"
+                "bin/rpkg",
+                "bin/rd"
             ],
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "": "src/"
                 }
-            }
+            },
+            "support": {
+                "source": "https://github.com/RobotUnion/robot-php-sdk/tree/v2",
+                "issues": "https://github.com/RobotUnion/robot-php-sdk/issues"
+            },
+            "time": "2017-11-16T17:30:14+00:00"
         },
         {
             "name": "facebook/webdriver",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/php-webdriver.git",
-                "reference": "eadb0b7a7c3e6578185197fd40158b08c3164c83"
+                "reference": "86b5ca2f67173c9d34340845dd690149c886a605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/eadb0b7a7c3e6578185197fd40158b08c3164c83",
-                "reference": "eadb0b7a7c3e6578185197fd40158b08c3164c83",
+                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/86b5ca2f67173c9d34340845dd690149c886a605",
+                "reference": "86b5ca2f67173c9d34340845dd690149c886a605",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-zip": "*",
-                "php": "^5.5 || ~7.0",
-                "symfony/process": "^2.8 || ^3.1"
+                "php": "^5.6 || ~7.0",
+                "symfony/process": "^2.8 || ^3.1 || ^4.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
+                "guzzle/guzzle": "^3.4.1",
+                "php-coveralls/php-coveralls": "^1.0.2",
                 "php-mock/php-mock-phpunit": "^1.1",
-                "phpunit/phpunit": "4.6.* || ~5.0",
-                "satooshi/php-coveralls": "^1.0",
-                "squizlabs/php_codesniffer": "^2.6"
+                "phpunit/phpunit": "^5.7",
+                "sebastian/environment": "^1.3.4 || ^2.0 || ^3.0",
+                "squizlabs/php_codesniffer": "^2.6",
+                "symfony/var-dumper": "^3.3 || ^4.0"
             },
             "type": "library",
             "extra": {
@@ -79,20 +94,20 @@
                 "selenium",
                 "webdriver"
             ],
-            "time": "2017-04-28T14:54:49+00:00"
+            "time": "2017-11-15T11:08:09+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v3.3.10",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "fdf89e57a723a29baf536e288d6e232c059697b1"
+                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/fdf89e57a723a29baf536e288d6e232c059697b1",
-                "reference": "fdf89e57a723a29baf536e288d6e232c059697b1",
+                "url": "https://api.github.com/repos/symfony/process/zipball/a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
+                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
                 "shasum": ""
             },
             "require": {
@@ -128,7 +143,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
+            "time": "2017-11-13T15:31:11+00:00"
         }
     ],
     "packages-dev": [],

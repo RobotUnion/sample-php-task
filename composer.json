@@ -2,13 +2,12 @@
   "name": "myrobot/my-task",
   "repositories": [
     {
-      "type": "path",
-      "url": "/home/lluis/Projects/Web/robotunion.net/robot-php-sdk"
+      "type": "vcs",
+      "url": "https://github.com/RobotUnion/robot-php-sdk.git"
     }
   ],
   "require": {
-    "RobotUnion/robot-php-sdk": "dev-driverfree",
-    "facebook/webdriver": "^1.4"
+    "RobotUnion/robot-php-sdk": "v2.x-dev"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

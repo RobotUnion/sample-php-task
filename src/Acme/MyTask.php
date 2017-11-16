@@ -8,9 +8,9 @@
 
 namespace Acme;
 
-use RobotUnion\Integration\RobotTask;
+use RALLF\Integration\Task;
 
-class MyTask extends RobotTask {
+class MyTask extends Task {
 
     /**
      * @return mixed

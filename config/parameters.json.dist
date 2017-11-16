@@ -5,8 +5,7 @@
   "account":"acc-id",
   "development":"dev-id",
   "robot": {
-    "selenium": "http://localhost:4444/wd/hub",
-    "capabilities": {
+    "driver": {
       "os": "any",
       "program": "chromium"
     }
